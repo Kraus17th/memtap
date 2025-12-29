@@ -17,25 +17,6 @@
 Usage:
   memtap.py -t TARGET [OPTIONS]
   memtap.py -f FILE [OPTIONS]
-# MemTap
-
-**memtap.py** — a utility for dumping data from memcached instances. Allows you to quickly and efficiently extract all keys and values from memcached servers.
-
-```bash
-└─$ python3 memtap.py -h
-
-,--.   ,--.                 ,--------.
-|   `.'   | ,---. ,--,--,--.'--.  .--',--,--. ,---.
-|  |'.'|  || .-. :|        |   |  |  ' ,-.  || .-. |
-|  |   |  |\   --.|  |  |  |   |  |  \ '-'  || '-' '
-`--'   `--' `----'`--`--`--'   `--'   `--`--'|  |-'.py (ver1.0) @Kraus17th
-        # one tap to dump memcache           `--'
-
-==========================================================================
-
-Usage:
-  memtap.py -t TARGET [OPTIONS]
-  memtap.py -f FILE [OPTIONS]
 
 Required Arguments:
   -t, --target TARGET              Target memcached host (mutually exclusive with -f)
