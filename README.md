@@ -1,3 +1,4 @@
+![](assets/deteact_logo_white.png)
 ![](assets/deteact_logo_black.png)
 
 # MemTap
