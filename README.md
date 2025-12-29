@@ -1,5 +1,4 @@
 ![](assets/deteact_logo_white.png)
-![](assets/deteact_logo_black.png)
 
 # MemTap
 
@@ -274,3 +273,5 @@ This project is distributed under the MIT license. See the `LICENSE` file for de
 ## ⚖️ Disclaimer
 
 This utility is intended for legal use only on servers to which you have explicit permission to access. Use on servers without permission may be illegal. The authors are not responsible for misuse of this tool. This utility is created for security and auditing. Always ensure you have the right to access target servers before use.
+
+![](assets/deteact_logo_black.png)
