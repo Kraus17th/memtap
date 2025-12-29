@@ -1,0 +1,48 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "memtap"
+version = "1.0.0"
+description = "Utility for dumping all data from memcached instances"
+readme = "README.md"
+requires-python = ">=3.6"
+license = {text = "MIT"}
+authors = [
+    {name = "Kraus17th"}
+]
+keywords = ["memcached", "dump", "cache", "security", "pentesting"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Information Technology",
+    "Topic :: System :: Networking",
+    "Topic :: Security",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+]
+
+dependencies = [
+    "pysocks>=1.7.1",
+    "tqdm>=4.67.0",
+]
+
+[project.scripts]
+memtap = "memtap:main"
+
+[tool.setuptools]
+py-modules = ["memtap"]
+
+[project.urls]
+Homepage = "https://github.com/Kraus17th/memtap"
+Repository = "https://github.com/Kraus17th/memtap"
+Issues = "https://github.com/Kraus17th/memtap/issues"
+
