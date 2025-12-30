@@ -43,7 +43,7 @@ Utility Options:
   -h, --help                       Show this help message
 ```
 
-## 🎯 Features
+## Features
 
 - **Complete data dump**: Extracts all keys and values from memcached server
 - **Proxy support**: Works through SOCKS5, SOCKS4, and HTTP proxies
@@ -54,7 +54,7 @@ Utility Options:
 - **Recovery**: Saves partial results on interruption
 - **Utilities**: Version check and key counting without full dump
 
-## 🚀 Installation
+## Installation
 
 ### Option 1: Install via pipx (recommended)
 
@@ -102,7 +102,7 @@ pip install -r requirements.txt
 python memtap.py -t TARGET
 ```
 
-## 📖 Usage
+## Usage
 
 ### Basic usage
 
@@ -173,7 +173,7 @@ memtap -t 192.168.1.100 -c
 memtap -t 192.168.1.100 -v
 ```
 
-## 📝 Command-line parameters
+## Command-line parameters
 
 ### Required arguments
 
@@ -202,7 +202,7 @@ memtap -t 192.168.1.100 -v
 - `-c, --only-count-keys` - Only count keys for each target
 - `-h, --help` - Show help message
 
-## 📄 Output file format
+## Output file format
 
 Results are saved to a text file with the following format:
 
@@ -220,14 +220,14 @@ Results are saved to a text file with the following format:
 ===== DONE: example_key_2 =====
 ```
 
-## 🔧 How it works
+## How it works
 
 1. **Metadata retrieval**: The utility sends the `lru_crawler metadump all` command to the memcached server to get a list of all keys
 2. **Key parsing**: Extracts all keys from metadata
 3. **Value retrieval**: For each key, sends a `get` command and retrieves the corresponding value
 4. **Saving**: Writes all key-value pairs to the output file
 
-## ⚠️ Important notes
+## Important notes
 
 - The utility requires the memcached server to support the `lru_crawler metadump all` command
 - When working with large amounts of data, the process may take significant time
@@ -235,7 +235,7 @@ Results are saved to a text file with the following format:
 - On interruption (Ctrl+C), partial results are automatically saved
 - Some keys may be unavailable (deleted, expired, etc.)
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 ### Error "Failed to retrieve metadata"
 
@@ -261,17 +261,17 @@ pip install pysocks
 pip install tqdm
 ```
 
-## 📦 Dependencies
+## Dependencies
 
 - `Python>=3.7` - Base of this tool
 - `pysocks>=1.7.1` - Proxy support (SOCKS4, SOCKS5, HTTP)
 - `tqdm>=4.67.0` - Progress bar (optional but recommended)
 
-## 📄 License
+## License
 
 This project is distributed under the MIT license. See the `LICENSE` file for details.
 
-## ⚖️ Disclaimer
+## Disclaimer
 
 This utility is intended for legal use only on servers to which you have explicit permission to access. Use on servers without permission may be illegal. The authors are not responsible for misuse of this tool. This utility is created for security and auditing. Always ensure you have the right to access target servers before use.
 
