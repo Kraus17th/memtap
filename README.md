@@ -263,9 +263,9 @@ pip install tqdm
 
 ## Dependencies
 
-- `Python>=3.7` - Base of this tool
-- `pysocks>=1.7.1` - Proxy support (SOCKS4, SOCKS5, HTTP)
-- `tqdm>=4.67.0` - Progress bar (optional but recommended)
+- `Python >= 3.7` - Base of this tool
+- `pysocks >= 1.7.1` - Proxy support (SOCKS4, SOCKS5, HTTP)
+- `tqdm >= 4.67.0` - Progress bar (optional but recommended)
 
 ## License
 
